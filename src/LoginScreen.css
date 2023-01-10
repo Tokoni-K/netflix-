@@ -1,0 +1,100 @@
+.loginscreen {
+    position: relative;
+    height: 100%;
+    background: url("https://www.xfire.com/wp-content/uploads/2022/09/netflix-cover-2-800x450.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loginscreen-logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.loginscreen-button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.loginscreen-gadient {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0,0,0.2);
+    background-image: linear-gradient(to top,
+        rgba(0, 0, 0, .8) 0%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, .8) 100%
+        ); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginscreen-body{
+    overflow-y: auto;
+    z-index:1;
+    color: white;
+    /* max-height: 100%; */
+    /* padding: 150px 20px; */
+    /* position: absolute;
+    top: 30%;
+    margin: auto; */
+    text-align: center;
+    padding: 40px 20px 0 20px;
+}
+.loginscreen-body>h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.loginscreen-body>h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.loginscreen-body>h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.loginscreen-input{
+    margin: 20px;
+}
+.loginscreen-input>form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginscreen-input>form>input {
+    padding: 7px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    max-width: 600px;
+    border: none;
+}
+.loginscreen-button2 {
+    padding: 13px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    background-color: #e50914;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loginscreen-button:active{
+    transform: translateY(1px);
+}

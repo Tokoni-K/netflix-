@@ -1,0 +1,123 @@
+.profilescreen-avatar{
+    width: 100px;
+    align-self: flex-start;
+}
+
+.profilescreen-body h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 11%;
+    border-bottom: 1px solid #282c28;
+    margin-bottom: 6px;
+}
+
+.profilescreen-body {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profilescreen-body h4 {
+    border-bottom: 1px solid #282c28;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.profilescreen-info{
+    margin-top: 6px;
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profilescreen-info img {
+    animation: pulse ease-in-out 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profilescreen-info img:hover {
+    cursor: pointer;
+    animation: none;
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+}
+.profilescreen-details {
+    width: 100%;
+}
+.profilescreen-details h2 {
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.profilescreen-signout {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: #e50914;
+    color: white;
+    opacity: 0.8;
+}
+.profilescreen-signout:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+    .profilescreen-body h3, .profilescreen-info {
+            width: 65%;
+        }
+}
+@media screen and (max-width: 700px) {
+    .profilescreen-body h3, .profilescreen-info {
+            width: 70%;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    .profilescreen-body h3 {
+        padding-top: 17%;
+        width: 75%;
+    }
+    .profilescreen-info {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .profilescreen-body h3 {
+        padding-top: 17%;
+        width: 80%;
+    }
+    .profilescreen-info {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .profilescreen-body h3 {
+        padding-top: 20%;
+        font-size: 2.3rem;
+        width: 90%;
+    }
+    .profilescreen-info {
+        width: 90%;
+    }
+}

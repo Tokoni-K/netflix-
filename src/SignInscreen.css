@@ -1,0 +1,55 @@
+.sign-in-screen {
+    /* max-width: 300px; */
+    width: 300px;
+    padding: 70px;
+    background: rgba(0, 0, 0, 0.85);
+}
+.sign-in-screen > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-screen>form>h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.sign-in-screen>form>h4 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.sign-in-screen>form>input {
+    padding: 10px;
+    outline: none;
+    height: 30px;
+    max-width: 600px;
+    margin-bottom: 14px;
+}
+.sign-in-screen>form>button{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    background-color: #e50914;
+    font-weight: 600;
+    margin-top: 20px;cursor: pointer;
+}
+.sign-in-screen>form>button:active{
+    transform: translate(0px, 1px);
+}
+
+.sign-up-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .sign-in-screen {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .sign-in-screen {
+        width: 600px;
+    }
+}
