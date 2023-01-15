@@ -12,7 +12,6 @@ import { logout, login, selectUser } from './features/userSlice';
 function App() {
 
   const user = useSelector(selectUser);
-// const user = true;
   const dispatch = useDispatch();
   const navigate = useNavigate();
   
